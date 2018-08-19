@@ -77,3 +77,31 @@ Kalman filter: IMU for prediction and GPS and LiDAR for measurement update
 
 Click [the link of Apollo repo for localization](https://github.com/ApolloAuto/apollo/tree/master/modules/localization) to learn more if you're interested.  
 More details about Apollo Localization appear in: [“Robust and Precise Vehicle Localization based on Multi-sensor Fusion in Diverse CityScenes, ICRA, 2018”. ](https://arxiv.org/pdf/1711.05805.pdf)
+
+## Perception
+- Camera, LiDAR
+- Task: Detection, classification, tracking, segmentation  
+
+sensor fusion  
+![alt text](images/sensor.png)  
+![alt text](images/fusion_kf.png) 
+
+
+Recommended Resources  
+Click [the link of Apollo repo for perception](https://github.com/ApolloAuto/apollo/tree/master/modules/perception) to learn more if you're interested.
+
+## Prediction
+two predition models  
+![alt text](images/two_prediction_models.png)  
+
+Apollo use model driven approach (lane sequence-based model)  
+![alt text](images/prediction.png)   
+If the car go 0-->4-->5  then it is predicted as right turn 
+
+Apollo RNN model for lane sequence prediction  
+![alt text](images/RNN1.png)   ![alt text](images/RNN2.png)
+
+Recommended Resources  
+Click [the link of Apollo repo for prediction](https://github.com/ApolloAuto/apollo/tree/master/modules/prediction) to learn more if you're interested.
+
+## Planning
